@@ -1,0 +1,26 @@
+<DIV class="col-lg-3 main-right">
+    <div class="cloud qqregion">
+        <h3>
+            <span>交流咨询</span>
+        </h3>
+        <ul class="qqs">
+            <div>前端汇官方QQ群<br/>群号<span>256687601,欢迎加入！</span></div>
+        </ul>
+    </div>
+    <div class="cloud">
+        <h3>标签云</h3>
+        <ul>
+            {% for item in tagList %}
+            <li><a href="/category/{{item.id}}.html" target="_blank">{{item.tagname}}</a></li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="links">
+        <h3><span><a href="/links.html">申请友情链接</a></span>友情链接</h3>
+        <ul>
+            {% for item in linksList %}
+            <li><a href="{{item.link}}" target="_blank">{{item.domain}}</a></li>
+            {%endfor%}
+        </ul>
+    </div>
+</div>
